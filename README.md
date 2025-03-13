@@ -6,7 +6,7 @@ The main strategy employed was a gradient boosted decision tree with hyperparame
 
 ### Exploratory Data Analysis
 On the explaratory data analysis, I saw that the influences of each parameter was not negligible, so did not delete them. But in hindsight, this may have not been the best choice. 
-![alt text](https://github.com/TerryTong-Git/MachineLearningComp/blob/main/PREDA_results.png?raw=true)
+![alt text](https://github.com/TerryTong-Git/MachineLearningComp/blob/main/EDA_results.png?raw=true)
 
 ### Parameter Tuning
 For the hyperparameters, I searched over the learning rate, l2 leaf regularization, model size regularization, and the depth of the tree. The hyperparameters were selected on a 5 fold cv, with each fold holding 75% of the train set data. I set the loss here to cross-entropy rather than log-loss, but they are essentially the same. For the evaluation metric, I use the precision recall area under curve of the reciever operating curve, hence forth referred to as the PRAUC. 
